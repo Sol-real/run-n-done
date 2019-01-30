@@ -44,6 +44,13 @@ echo "---------------------------------------------------------------------"
 
 GREEN "Done beginning setup:"
 #---------------------------------------------------------------------
+echo " "
+GREEN "Changing directory to $PWD"
+cd $PWD
+
+GREEN "Creating bin directory"
+mkdir ./bin
+
 BLUE "Updating repositories..."
 sudo apt-get update 
 
@@ -128,5 +135,5 @@ BLUE "Installing radare2..."
 sudo apt-get install -y radare2
 
 BLUE "Installing hash identifier..."
-wget 
+wget "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hash-identifier/Hash_ID_v1.1.py" -O 
 
