@@ -57,7 +57,7 @@ GREEN "#                                                                        
 GREEN "#  Written by The Hood                                                   #"
 GREEN "#                                                                        #"
 GREEN "#  Inspired by John Hammonds ignition_key.sh:                            #"
-GREEN "#  -> github.com//JohnHammond/ignition_key/blob/master/ignition_key.sh   #"
+GREEN "#  -> github.com/JohnHammond/ignition_key/blob/master/ignition_key.sh    #"
 GREEN "#                                                                        #"
 GREEN "##########################################################################"
 echo " "
