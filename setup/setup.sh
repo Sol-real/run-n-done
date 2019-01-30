@@ -34,17 +34,53 @@ then
 fi
 
 GREEN "Running as root"
-echo "
-echo "---------------------------------------------------------------------"
-GREEN "Written by The Hood"
 echo " "
-GREEN "Inspired by John Hammonds ignition_key.sh:"
-GREEN "-> www.github.com//JohnHammond/ignition_key/blob/master/ignition_key.sh"
-echo "---------------------------------------------------------------------"
+echo "###########################################################################"
+echo "#     ________     __    __    __    __    __    __    __    __           #"
+echo "#    |   __   |   |  |  |  |  |  \  |  |  |  |  |  \  |  |  |  |          #"
+echo "#    |  |__|  /   |  |  |  |  |   \ |  |  |__|  |   \ |  |  |__|          #"               
+echo "#    |   __   \   |  |  |  |  |    \|  |        |    \|  |                #"
+echo "#    |   | \   |  |  |__|  |  |  |\    |        |  |\    |                #" 
+echo "#    |___|  \__|  |________|  |__| \___|        |__| \___|                #"
+echo "#                                                                         #"
+echo "#                  _______      _______    __    __    _______            #"
+echo "#                 |   _   \    |   _   |  |  \  |  |  |   ____|           #"
+echo "#                 |  | \   \   |  | |  |  |   \ |  |  |  |__              #" 
+echo "#                 |  |  |   |  |  | |  |  |    \|  |  |   __|             #"
+echo "#                 |  |_/   /   |  |_|  |  |  |\    |  |  |____            #"
+echo "#                 |_______/    |_______|  |__| \___|  |_______|           #" 
+echo "###########################################################################"
+echo " "
+GREEN "##########################################################################"
+GREEN "#                                                                        #"
+GREEN "#  Written by The Hood                                                   #"
+GREEN "#                                                                        #"
+GREEN "#  Inspired by John Hammonds ignition_key.sh:                            #"
+GREEN "#  -> github.com//JohnHammond/ignition_key/blob/master/ignition_key.sh   #"
+GREEN "#                                                                        #"
+GREEN "##########################################################################"
+echo " "
 
-GREEN "Done beginning setup:"
 #---------------------------------------------------------------------
-echo " "
+RED "Start setup (1) , Quit setup (0):"
+read input
+
+if [ $input == 0 ]
+then
+  RED "Quitting Setup"
+  exit
+elif [ $input == 1 ]
+then
+  GREEN "Beginning setup:"
+else
+  RED "Invalid input quiting setup"
+  exit
+fi
+
+
+
+GREEN "Done. Beginning setup:"
+
 GREEN "Changing directory to $PWD"
 cd $PWD
 
@@ -135,5 +171,20 @@ BLUE "Installing radare2..."
 sudo apt-get install -y radare2
 
 BLUE "Installing hash identifier..."
-wget "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/hash-identifier/Hash_ID_v1.1.py" -O 
+cd ./bin
+wget "https://raw.githubusercontent.com/real-hood/run-n-done/master/dependencies/hash_id" -O hash_id
+chmod +x hash_id
+cd ..
+
+BLUE "Installing John the ripper..."
+sudo apt-get install -y john
+
+BLUE "Installing hashcat..."
+sudo apt-get install -y hashcat
+
+BLUE "Installing vim..."
+sudo apt-get install -y vim
+
+GREEN "Finished setup! [Press enter to close]"
+read anykey
 
