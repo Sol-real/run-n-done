@@ -1,10 +1,14 @@
 #!/usr/bin/python
+#headline
+print "--------=Vignere Decryptor=---------"
+print "by The Hood"
+print " "
 #Defining all varibles that are needed and editing them so they can be used properly.
 #Also getting the user input of key and ciphered text
 Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Alphabet = Alphabet.lower()
-key = str(raw_input("Enter the key that is used: "))
-cipher = str(raw_input("Enter the ciphered text: "))
+key = str(raw_input("Please enter the key that is used: "))
+cipher = str(raw_input("Please enter the ciphered text: "))
 key = key.lower()
 cipher = cipher.lower()
 c = 0
@@ -15,10 +19,13 @@ newalpha = ""
 if (len(cipher)>len(key)):
 	for i in range (0,(len(cipher)-len(key))):
 		key += key[i]
+	print "[+] Adjusting key length"
 elif (len(cipher)<len(key)):
 	key = key[:(len(key)-len(cipher))]
+	print "[+] Adjusting key length"
 #---------------------------------------
 #Iterating over the key
+print "[+] Starting decoding..."
 for i in range (0,len(key)):
         	
 	for j in range (0,len(Alphabet)):
@@ -37,4 +44,6 @@ for i in range (0,len(key)):
 
 	c = c + 1	
 #Printing the answer / decoded text
+print " "
+print "Decoded Message: "
 print answer
