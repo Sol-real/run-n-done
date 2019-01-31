@@ -2,8 +2,8 @@
 
 Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Alphabet = Alphabet.lower()
-key = str(raw_input("Enter the key that is used"))
-cipher = str(raw_input("Enter the Decodable part"))
+key = str(raw_input("Enter the key that is used: "))
+cipher = str(raw_input("Enter the Decodable part: "))
 key = key.lower()
 cipher = cipher.lower()
 
