@@ -126,7 +126,7 @@ wget "https://atom.io/download/deb" -O atom.deb
 dpkg -i atom.deb
 rm atom.deb
 
-BLUE "Installing python"
+BLUE "Installing python..."
 sudo apt-get install python
 
 BLUE "Installing pip..."
@@ -182,6 +182,9 @@ sudo apt-get install -y hashcat
 
 BLUE "Installing vim..."
 sudo apt-get install -y vim
+
+BLUE "Fixing any broken files or dependencies..."
+sudo apt-get -f -y install
 
 GREEN "Finished setup! [Press enter to close]"
 read anykey
