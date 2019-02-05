@@ -82,11 +82,8 @@ fi
 
 GREEN "Done. Beginning setup:"
 
-GREEN "Changing directory to $PWD"
-cd $PWD
-
-GREEN "Creating bin directory"
-mkdir ./bin
+GREEN "Creating bin directory in $HOME"
+mkdir ~/bin
 
 BLUE "Updating repositories..."
 sudo apt-get update 
@@ -128,6 +125,9 @@ BLUE "Installing Atom..."
 wget "https://atom.io/download/deb" -O atom.deb
 dpkg -i atom.deb
 rm atom.deb
+
+BLUE "Installing python"
+sudo apt-get install python
 
 BLUE "Installing pip..."
 sudo apt-get install -y python-pip
