@@ -106,9 +106,6 @@ sudo apt-get install -y aircrack-ng
 BLUE "Installing terminator..."
 sudo apt-get intall -y terminator
 
-BLUE "Installing pip..."
-sudo apt-get install -y python-pip
-
 BLUE "Installing openvpn..."
 sudo apt-get install -y openvpn
 
