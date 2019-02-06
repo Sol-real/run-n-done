@@ -112,6 +112,9 @@ sudo apt-get install -y nmap
 BLUE "Installing curl..."
 sudo apt-get install -y curl
 
+BLUE "Installing chntpw..."
+sudo apt-get install chntpw
+
 BLUE "Installing net-tools"
 sudo apt-get install -y net-tools
 
