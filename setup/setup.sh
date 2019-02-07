@@ -22,7 +22,7 @@ function BLUE(){
 	echo -e "${BLUE}${1}${NC}"
 }
 
-GREEN " [+] Starting setup.sh"
+GREEN "[+] Starting setup.sh"
 YELLOW "[O] Testing for root:"
 
 #Testing for root folder
