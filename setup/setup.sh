@@ -107,9 +107,6 @@ sudo apt-get install -y p7zip-full
 BLUE "Installing aircrack-ng..."
 sudo apt-get install -y aircrack-ng
 
-BLUE "Installing terminator..."
-sudo apt-get intall -y terminator
-
 BLUE "Installing openvpn..."
 sudo apt-get install -y openvpn
 
