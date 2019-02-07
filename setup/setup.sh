@@ -35,7 +35,7 @@ fi
 GREEN "Running as root"
 
 # Testing if git folder exits and you are running the programm in it
-if [ $PWD == "$HOME/git/run-and-done/setup" ]
+if [ $PWD -ne "$HOME/git/run-and-done/setup" ]
 then
   	RED "Please create it git directory in your home folder and run the programm from there"
 	exit
