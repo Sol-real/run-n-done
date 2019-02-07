@@ -28,8 +28,7 @@ YELLOW "[O] Testing for root:"
 #Testing for root folder
 if [ $UID -ne 0 ]
 then
-  	RED "[-] Not running as root"
-	RED "[-] You must run this script as root!" && echo 
+  	RED "[-] Not running as root" 
 	exit
 fi
 GREEN "[+] Running as root"
