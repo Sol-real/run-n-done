@@ -10,36 +10,37 @@ BLUE=`tput bold && tput setaf 4`
 NC=`tput sgr0`
 
 function RED(){
-	echo -e "\n${RED}${1}${NC}"
+	echo -e "${RED}${1}${NC}"
 }
 function GREEN(){
-	echo -e "\n${GREEN}${1}${NC}"
+	echo -e "${GREEN}${1}${NC}"
 }
 function YELLOW(){
-	echo -e "\n${YELLOW}${1}${NC}"
+	echo -e "${YELLOW}${1}${NC}"
 }
 function BLUE(){
-	echo -e "\n${BLUE}${1}${NC}"
+	echo -e "${BLUE}${1}${NC}"
 }
 
-GREEN "Starting setup.sh"
-YELLOW "Testing for root:"
+GREEN " [+] Starting setup.sh"
+YELLOW "[O] Testing for root:"
 
 #Testing for root folder
 if [ $UID -ne 0 ]
 then
-  RED "Not running as root"
-	RED "You must run this script as root!" && echo 
+  	RED "[-] Not running as root"
+	RED "[-] You must run this script as root!" && echo 
 	exit
 fi
-GREEN "Running as root"
+GREEN "[+] Running as root"
 
 # Testing if git folder exits and you are running the programm in it
 if [ "$PWD" != "$HOME/git/run-n-done/setup" ]
 then
-  	RED "Please run this programm from $HOME/git/run-n-done/setup"
+  	RED "[-] Please run this programm from $HOME/git/run-n-done/setup"
 	exit
 fi
+GREEN "[+] Running in git folder"
 
 echo " "
 echo "###########################################################################"
@@ -81,7 +82,7 @@ elif [ $input == 1 ]
 then
   GREEN "Beginning setup:"
 else
-  RED "Invalid input quiting setup"
+  RED "Invalid input quitting setup"
   exit
 fi
 
