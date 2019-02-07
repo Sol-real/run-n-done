@@ -25,24 +25,22 @@ function BLUE(){
 GREEN "Starting setup.sh"
 YELLOW "Testing for root:"
 
-# Testing if root...
-if [ $PWD == "$HOME/git/run-and-done/setup ]
-then
-  	RED "Please create it git directory in your home folder and run the programm from there"
-	RED "You must run this script as root!" && echo 
-	exit
-fi
-
-#Testing for git folder
+#Testing for root folder
 if [ $UID -ne 0 ]
 then
   RED "Not running as root"
 	RED "You must run this script as root!" && echo 
 	exit
 fi
-
-
 GREEN "Running as root"
+
+# Testing if git folder exits and you are running the programm in it
+if [ $PWD == "$HOME/git/run-and-done/setup ]
+then
+  	RED "Please create it git directory in your home folder and run the programm from there"
+	exit
+fi
+
 echo " "
 echo "###########################################################################"
 echo "#     ________     __    __    __    __    __    __    __    __           #"
