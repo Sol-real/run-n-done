@@ -26,12 +26,21 @@ GREEN "Starting setup.sh"
 YELLOW "Testing for root:"
 
 # Testing if root...
+if [ $PWD == "$HOME/git/run-and-done/setup ]
+then
+  	RED "Please create it git directory in your home folder and run the programm from there"
+	RED "You must run this script as root!" && echo 
+	exit
+fi
+
+#Testing for git folder
 if [ $UID -ne 0 ]
 then
   RED "Not running as root"
 	RED "You must run this script as root!" && echo 
 	exit
 fi
+
 
 GREEN "Running as root"
 echo " "
