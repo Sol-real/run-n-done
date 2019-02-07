@@ -133,6 +133,11 @@ wget "https://atom.io/download/deb" -O atom.deb
 dpkg -i atom.deb
 rm atom.deb
 
+BLUE "Installing VSCode..."
+wget "https://go.microsoft.com/fwlink/?LinkID=760868" -O vscode.deb
+dpkg -i vscode.deb
+rm vscode.deb
+
 BLUE "Installing python..."
 sudo apt-get install python
 
