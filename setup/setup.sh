@@ -85,7 +85,7 @@ else
   exit
 fi
 
-
+#-------------------------------------------
 
 GREEN "Done. Beginning setup:"
 
@@ -145,9 +145,9 @@ BLUE "Installing pip..."
 sudo apt-get install -y python-pip
 
 BLUE "Installing python-requests..."
-pip install requests
+sudo pip install requests
 
-BLUE "Installing Binwalk..."
+BLUE "Installing binwalk..."
 sudo apt-get install -y binwalk
 
 BLUE "Installing rot13..."
@@ -156,7 +156,7 @@ sudo apt-get install -y bsdgames
 BLUE "Installing hexedit..."
 sudo apt-get install -y hexedit
 
-BLUE "Installing Python pwntools..."
+BLUE "Installing python pwntools..."
 sudo pip install pwntools
 
 BLUE "Installing nikto..."
@@ -181,10 +181,7 @@ BLUE "Installing radare2..."
 sudo apt-get install -y radare2
 
 BLUE "Installing hash identifier..."
-cd ./bin
-wget "https://raw.githubusercontent.com/real-hood/run-n-done/master/dependencies/hash_id" -O hash_id
-chmod +x hash_id
-cd ..
+sudo cp $HOME/git/run-n-done/dependencies/hash_id ~/bin
 
 BLUE "Installing John the ripper..."
 sudo apt-get install -y john
