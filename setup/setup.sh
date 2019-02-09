@@ -192,6 +192,9 @@ sudo apt-get install -y hashcat
 BLUE "Installing vim..."
 sudo apt-get install -y vim
 
+BLUE "Installing xclip..."
+sudo apt-get install -y xclip
+
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
 
