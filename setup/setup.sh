@@ -41,6 +41,22 @@ then
 fi
 GREEN "[+] Running in git folder"
 
+#----------------------------------
+
+# Asking for custom vimrc file
+RED "Use custom vimrc file? - Yes(1) | No(0): "
+read input
+if [ $input == 1 ]
+then
+  GREEN "Added custom vimrc file to setup..."
+  vimrc=1
+  exit
+else
+  YELLOW "Not using custom vimrc file..."
+  vimrc=0
+  exit
+fi
+#----------------------------------------
 echo " "
 echo "###########################################################################"
 echo "#     ________     __    __    __    __    __    __    __    __           #"
@@ -194,6 +210,12 @@ sudo apt-get install -y vim
 
 BLUE "Installing xclip..."
 sudo apt-get install -y xclip
+
+if [ $vimrc == 1 ]
+then
+	BLUE "Loading /dependencies/.vimrc into $HOME"
+	cp ../dependencies/.vimrc ~
+fi
 
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
