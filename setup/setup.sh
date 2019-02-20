@@ -223,6 +223,9 @@ sudo apt-get install -y ghex
 BLUE "Installing locate..."
 sudo apt-get install -y locate
 
+BLUE "Installing tmux..."
+sudo apt-get install -y tmux
+
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
 
