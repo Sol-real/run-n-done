@@ -217,6 +217,9 @@ then
 	cp ../dependencies/.vimrc ~
 fi
 
+BLUE "Installing ghex..."
+sudo apt-get install -y ghex
+
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
 
