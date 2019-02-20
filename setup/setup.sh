@@ -220,6 +220,9 @@ fi
 BLUE "Installing ghex..."
 sudo apt-get install -y ghex
 
+BLUE "Installing locate..."
+sudo apt-get install -y locate
+
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
 
