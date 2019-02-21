@@ -226,6 +226,9 @@ sudo apt-get install -y locate
 BLUE "Installing tmux..."
 sudo apt-get install -y tmux
 
+BLUE "Installing nethogs..."
+sudo apt-get install -y nethogs 
+
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
 
