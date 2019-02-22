@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #headline
 print "--------=Vignere Decryptor=---------"
-print "by The Hood"
+print "by White Hood"
 print " "
 #Defining all varibles that are needed and editing them so they can be used properly.
 #Also getting the user input of key and ciphered text
