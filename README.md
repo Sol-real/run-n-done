@@ -2,7 +2,7 @@
 
 **The Hood** | 30-1-2019
 
->Twitter: @thehood__
+>Twitter: @Wh1teHood
 
 ---
 
