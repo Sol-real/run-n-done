@@ -199,8 +199,8 @@ sudo apt-get install -y radare2
 BLUE "Installing hash identifier..."
 sudo cp $HOME/git/run-n-done/dependencies/hash_id ~/bin
 
-BLUE "Installing John the ripper..."
-sudo apt-get install -y john
+YELLOW "Need to fix john install"
+#Please add line to install jumbo john
 
 BLUE "Installing hashcat..."
 sudo apt-get install -y hashcat
