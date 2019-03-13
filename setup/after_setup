@@ -1,0 +1,8 @@
+# Compiling / Finishing Radare2 Retargetable Decompiler Installation:
+
+    cd ~/git/retdec
+    mkdir build && cd build
+    cmake .. -DCMAKE_INSTALL_PREFIX=~/bin/retdec
+    make -jN (N is the number of CPU cores to use for parallel build)
+    make install
+    echo "$HOME/bin/retdec/bin/retdec-decompiler.py" > $HOME/.r2retdec
