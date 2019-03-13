@@ -226,8 +226,25 @@ sudo apt-get install -y locate
 BLUE "Installing nethogs..."
 sudo apt-get install -y nethogs 
 
+BLUE "Initialising Radare2 Package Manager..."
+r2pm init
+
+BLUE "Updating Radare2 Package Manager..."
+r2pm update
+
+BLUE "Installing Radare2 Retargetable Decompiler..."
+r2pm -i r2retdec
+
+BLUE "Installing Dependencies for Retargetable Decompiler..."
+sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
+
+BLUE "Cloning Retargetable Decompiler..."
+git clone https://github.com/avast-tl/retdec ~/git/
+
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
+
+YELLOW "Follow the steps in the 'after_setup' file"
 
 GREEN "Finished setup! [Press enter to close]"
 read anykey
