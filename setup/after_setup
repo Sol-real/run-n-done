@@ -1,8 +1,17 @@
 # Compiling / Finishing Radare2 Retargetable Decompiler Installation:
 
-    cd ~/git/retdec
-    mkdir build && cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX=~/bin/retdec
-    make -jN (N is the number of CPU cores to use for parallel build)
-    make install
-    echo "$HOME/bin/retdec/bin/retdec-decompiler.py" > $HOME/.r2retdec
+    $ cd ~/git/retdec
+    $ mkdir build && cd build
+    $ cmake .. -DCMAKE_INSTALL_PREFIX=~/bin/retdec
+    $ make -jN (N is the number of CPU cores to use for parallel build)
+    $ make install
+    $ echo "$HOME/bin/retdec/bin/retdec-decompiler.py" > $HOME/.r2retdec
+    
+# Setting up VScode for Python:
+    
+    Using the plugins tab on vscode to install 'IntelliSense'
+    $ pip install pylint
+    
+    
+    
+* $ means that it should be run in the terminal
