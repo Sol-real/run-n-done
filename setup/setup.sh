@@ -8,8 +8,8 @@ GREEN=`tput bold && tput setaf 2`
 YELLOW=`tput bold && tput setaf 3`
 BLUE=`tput bold && tput setaf 4`
 NC=`tput sgr0`
-
-function RED(){
+ 
+ RED(){
 	echo -e "${RED}${1}${NC}"
 }
 function GREEN(){
@@ -237,6 +237,10 @@ r2pm -i r2retdec
 
 BLUE "Installing ExFat Usage..." 
 apt install exfat-fuse exfat-utils
+
+BLUE "Installing LaTeX ..."
+sudo apt install texlive-base texlive-latex-recommended texlive-latex-extra texlive-publishers texlive-science texlive-pictures
+sudo apt install texlive-extra-utils 
 
 BLUE "Installing gummi for LaTeX..."
 sudo apt install gummi
