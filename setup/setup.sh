@@ -235,6 +235,15 @@ r2pm update
 BLUE "Installing Radare2 Retargetable Decompiler..."
 r2pm -i r2retdec
 
+BLUE "Installing ExFat Usage..." 
+apt install exfat-fuse exfat-utils
+
+BLUE "Installing gummi for LaTeX..."
+sudo apt install gummi
+
+BLUE "Installing ctags for vim..."
+sudo apt install ctags
+
 BLUE "Installing Dependencies for Retargetable Decompiler..."
 sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
 
@@ -248,4 +257,5 @@ YELLOW "Follow the steps in the 'after_setup' file"
 
 GREEN "Finished setup! [Press enter to close]"
 read anykey
+
 
