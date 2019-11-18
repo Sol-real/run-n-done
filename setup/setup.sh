@@ -236,17 +236,20 @@ BLUE "Installing Radare2 Retargetable Decompiler..."
 r2pm -i r2retdec
 
 BLUE "Installing ExFat Usage..." 
-apt install exfat-fuse exfat-utils
+apt install exfat-fuse exfat-utils -y
 
 BLUE "Installing LaTeX ..."
 sudo apt install texlive-base texlive-latex-recommended texlive-latex-extra texlive-publishers texlive-science texlive-pictures
-sudo apt install texlive-extra-utils 
+sudo apt install texlive-extra-utils -y
 
 BLUE "Installing gummi for LaTeX..."
-sudo apt install gummi
+sudo apt install gummi -y
 
 BLUE "Installing ctags for vim..."
-sudo apt install ctags
+sudo apt install ctags -y
+
+BLUE "Installing gnome-tweaks..."
+sudo apt install gnome-tweaks -y
 
 BLUE "Installing Dependencies for Retargetable Decompiler..."
 sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
