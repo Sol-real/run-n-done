@@ -114,8 +114,8 @@ sudo apt-get update
 BLUE "Installing git..."
 sudo apt-get install -y git
 
-BLUE "Installing build-essentials and libssl-dev..."
-sudo apt-get install -y build-essentials libssl-dev
+BLUE "Installing build-essentials, libssl-dev and linux-generic..."
+sudo apt-get install -y build-essentials libssl-dev linux-generic
 
 BLUE "Installing 7zip..."
 sudo apt-get install -y p7zip-full
@@ -250,6 +250,9 @@ sudo apt install ctags -y
 
 BLUE "Installing gnome-tweaks..."
 sudo apt install gnome-tweaks -y
+
+BLUE "Installing traceroute..."
+sudo apt install traceroute
 
 BLUE "Installing Dependencies for Retargetable Decompiler..."
 sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
