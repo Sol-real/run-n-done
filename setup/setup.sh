@@ -252,7 +252,12 @@ BLUE "Installing gnome-tweaks..."
 sudo apt install gnome-tweaks -y
 
 BLUE "Installing traceroute..."
-sudo apt install traceroute
+sudo apt install traceroute -y
+
+BLUE "Adding browers dependency..."
+sudo apt install libavcodec-extra -y
+
+YELLOW "Please do: Firefox's settings: Preferences -> General -> Play DRM-controlled content"
 
 BLUE "Installing Dependencies for Retargetable Decompiler..."
 sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
