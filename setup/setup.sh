@@ -113,7 +113,7 @@ BLUE "Installing git..."
 sudo apt-get install -y git
 
 BLUE "Installing build-essentials, libssl-dev and linux-generic..."
-sudo apt-get install -y build-essentials libssl-dev linux-generic
+sudo apt-get install -y build-essentials libssl-dev linux-generic build-essential
 
 BLUE "Installing 7zip..."
 sudo apt-get install -y p7zip-full
