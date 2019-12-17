@@ -50,11 +50,9 @@ if [ $input == 1 ]
 then
   GREEN "Added custom vimrc file to setup..."
   vimrc=1
-  exit
 else
   YELLOW "Not using custom vimrc file..."
   vimrc=0
-  exit
 fi
 #----------------------------------------
 echo " "
