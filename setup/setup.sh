@@ -118,6 +118,9 @@ sudo apt-get install -y build-essentials libssl-dev linux-generic build-essentia
 BLUE "Installing 7zip..."
 sudo apt-get install -y p7zip-full
 
+BLUE "Installing libssl-dev"
+sudo apt install libssl-dev
+
 BLUE "Installing aircrack-ng..."
 sudo apt-get install -y aircrack-ng
 
