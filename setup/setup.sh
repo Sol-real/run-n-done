@@ -261,7 +261,14 @@ BLUE "Installing Dependencies for Retargetable Decompiler..."
 sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
 
 BLUE "Cloning Retargetable Decompiler..."
-git clone https://github.com/avast-tl/retdec ~/git/
+RED "PLEASE FIX ME"
+#git clone https://github.com/avast-tl/retdec ~/git/
+
+BLUE "Installing make..."
+sudo apt install make -y
+
+BLUE "Installing cmake..."
+sudo apt install cmake -y
 
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
