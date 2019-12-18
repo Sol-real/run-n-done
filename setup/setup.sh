@@ -113,10 +113,13 @@ BLUE "Installing git..."
 sudo apt-get install -y git
 
 BLUE "Installing build-essentials, libssl-dev and linux-generic..."
-sudo apt-get install -y build-essentials libssl-dev linux-generic
+sudo apt-get install -y build-essentials libssl-dev linux-generic build-essential
 
 BLUE "Installing 7zip..."
 sudo apt-get install -y p7zip-full
+
+BLUE "Installing libssl-dev"
+sudo apt install libssl-dev
 
 BLUE "Installing aircrack-ng..."
 sudo apt-get install -y aircrack-ng
@@ -261,7 +264,14 @@ BLUE "Installing Dependencies for Retargetable Decompiler..."
 sudo apt-get install build-essential cmake git perl python3 bison flex libfl-dev autoconf automake libtool pkg-config m4 zlib1g-dev upx doxygen graphviz
 
 BLUE "Cloning Retargetable Decompiler..."
-git clone https://github.com/avast-tl/retdec ~/git/
+RED "PLEASE FIX ME"
+#git clone https://github.com/avast-tl/retdec ~/git/
+
+BLUE "Installing make..."
+sudo apt install make -y
+
+BLUE "Installing cmake..."
+sudo apt install cmake -y
 
 BLUE "Fixing any broken files or dependencies..."
 sudo apt-get -f -y install
