@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Written by The Hood, inspired by John Hammond
+#Written by Sol, inspired by John Hammond
 
 # Define colors...
 RED=`tput bold && tput setaf 1`
