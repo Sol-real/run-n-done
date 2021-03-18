@@ -2,7 +2,7 @@
 
 **White Hood** | 30-1-2019
 
->Twitter: @Wh1teHood
+>Twitter: @hydr0nium_
 
 ---
 
